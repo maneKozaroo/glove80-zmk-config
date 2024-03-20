@@ -77,12 +77,12 @@
 
         Symbols {
             bindings = <
-&trans  &trans         &trans            &trans          &trans                                                                                   &trans                 &trans            &trans             &trans            &trans
-&trans  &trans         &trans            &trans          &trans                &trans                                                  &trans     &trans                 &trans            &trans             &trans            &trans
-&trans  &trans         &trans            &kp ASTERISK    &kp SLASH             &trans                                                  &trans     &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp GRAVE          &trans            &trans
-&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans                                                  &kp TILDE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
-&trans  &trans         &trans            &kp PIPE        &kp BACKSLASH         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PLUS               &kp MINUS         &kp EQUAL          &trans            &trans
-&trans  &trans         &trans            &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans             &trans                 &trans            &trans             &trans            &trans
+&trans  &trans         &trans            &trans          &trans                                                                                        &trans                 &trans            &trans             &trans            &trans
+&trans  &trans         &trans            &trans          &trans                &trans                                                  &trans          &trans                 &trans            &trans             &trans            &trans
+&trans  &trans         &trans            &kp ASTERISK    &kp SLASH             &trans                                                  &trans          &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp GRAVE          &trans            &trans
+&trans  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans                                                  &kp TILDE       &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE   &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
+&trans  &trans         &trans            &kp PIPE        &kp BACKSLASH         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp PLUS               &kp MINUS         &kp EQUAL          &trans            &trans
+&trans  &trans         &trans            &trans          &trans                        &trans  &trans  &trans  &trans  &trans  &trans                  &trans                 &trans            &trans             &trans            &trans
             >;
         };
 
