@@ -10,7 +10,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUMBERS";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&to 4>;
+            bindings = <&mo 6>, <&to 6>;
         };
 
         magic: magic {
@@ -70,8 +70,8 @@
 &none       &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                                                              &kp N6  &kp N7    &kp N8     &kp N9     &kp N0     &none
 &none       &kp Q      &kp W      &kp E     &kp R     &kp T                                                               &kp Y   &kp U     &kp I      &kp O      &kp P      &none
 &none       &kp A      &kp S      &kp D     &kp F     &kp G                                                               &kp H   &kp J     &kp K      &kp L      &kp SEMI   &none
-&none       &kp Z      &kp X      &kp C     &kp V     &kp B   &mo 1     &mo 2       &mo 3  &none      &none    &none      &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH   &none
-&magic 4 0  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI          &kp BSPC  &kp ESCAPE  &none  &kp ENTER  &kp TAB  &kp SPACE          &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &none
+&none       &kp Z      &kp X      &kp C     &kp V     &kp B   &mo 1     &mo 2       &mo 3  &none      &mo 5    &mo 4      &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH   &none
+&magic 6 0  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI          &kp BSPC  &kp ESCAPE  &none  &kp ENTER  &kp TAB  &kp SPACE          &kp LGUI  &kp LALT   &kp LCTRL  &kp LSHFT  &none
             >;
         };
 
@@ -105,6 +105,28 @@
 &trans  &trans  &trans  &trans  &trans  &trans                                                  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none           &kp PAGE_DOWN   &kp END       &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                  &trans          &trans        &trans           &trans  &trans
+            >;
+        };
+
+        Workspaces {
+            bindings = <
+&trans  &trans      &trans      &trans      &trans                                                                              &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans      &trans                                                      &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans      &trans                                                      &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &kp LA(N1)  &kp LA(N2)  &kp LA(N3)  &kp LA(N4)  &kp LA(N5)                                                  &kp LA(N6)  &kp LA(N7)  &kp LA(N8)  &kp LA(N9)  &kp LA(N0)  &trans
+&trans  &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans      &trans      &trans      &trans
+            >;
+        };
+
+        Tabs {
+            bindings = <
+&trans  &trans      &trans      &trans      &trans                                                                                    &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans      &trans                                                           &trans       &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans      &trans                                                           &trans       &trans      &trans      &trans      &trans      &trans
+&trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N4)  &kp LG(N5)                                                       &kp LG(N6)   &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp LG(N0)  &trans
+&trans  &trans      &trans      &trans      &trans      &kp LC(LS(TAB))  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(TAB)  &trans      &trans      &trans      &trans      &trans
+&trans  &trans      &trans      &trans      &trans                       &trans  &trans  &trans  &trans  &trans  &trans               &trans      &trans      &trans      &trans      &trans
             >;
         };
 
